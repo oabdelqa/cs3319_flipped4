@@ -6,11 +6,16 @@
 	<link href="https://fonts.googleapis.com/css?family=Mali" rel="stylesheet">
 </head>
 <body>
+<?php
+  include "connecttodb.php"; 
+?>
 <h1>Museums of the World </h1>
 Select your museum:
 <select>
-  <option value="1">Art Gallery of Ontario</option>
-
+  <option value="1">Select Here</option>
+  <?php
+    include "getmuseum.php"
+  ?>
 </select>
 <hr>
 <hr>
